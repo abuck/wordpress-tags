@@ -1,0 +1,253 @@
+.right-column-inner {
+	margin-left: 280px;
+	margin-top: 30px;
+	position: relative;
+}
+
+
+#search-bar input {
+	background: url(images/search.jpg) no-repeat scroll 15px 15px;
+	background-position: 1%;
+	padding-left: 30px;
+	background-color: #fff;
+	width: 650px;
+  height: 45px;
+  border: 1px solid #c7d6e0;
+	cursor: pointer;
+	margin-top:5%;
+	font-size: 14px;
+}
+
+
+#search-bar input:focus {
+	outline: none;
+	border-color: #78dcfa;
+	box-shadow: 0 0 5px #78dcfa;
+}
+
+#trending-tags ul, #top-posts ul, #tagged-in ul{
+	list-style: none;
+	margin-left: 0;
+	display:inline-block;
+}
+
+#trending-tags ul li.trending-tags-header, #top-posts ul li.top-posts-header,
+#tagged-in ul li.tagged-in-header, #top-posts ul li.top-posts-header-page2{
+	padding: 2px 10px 2px 0px;
+}
+
+#trending-tags ul li.trending-tags-header::after {
+	border-top: 1px #c8d7e1 solid;
+	content:'';
+	display:;
+	position:absolute;
+	top:9px;
+	width: 568px;
+	left:100%;
+}
+
+#top-posts ul li.top-posts-header::after{
+	border-top: 1px #c8d7e1 solid;
+	content:'';
+	display:;
+	position:absolute;
+	top:9px;
+	width: 590px;
+	left:100%;
+}
+
+#top-posts ul li.top-posts-header-page2::after{
+	border-top: 1px #c8d7e1 solid;
+	content:'';
+	display:;
+	position:absolute;
+	top:9px;
+	width: 530px;
+	left:100%;
+}
+
+.latest-posts-header {
+	border-bottom: 6px solid #0086BD;
+	margin-right: 16px;
+}
+
+
+#tagged-in ul li.tagged-in-header::after {
+	border-top: 1px #c8d7e1 solid;
+	content:'';
+	display:;
+	position:absolute;
+	top:9px;
+	width: 590px;
+	left:100%;
+}
+
+
+.trending-tags-header, .top-posts-header, .tagged-in-header, .top-posts-header-page2, .latest-posts-header{
+	color: #87a6bc;
+	background: none;
+	font-size: 10px;
+	display: inline-block;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	margin-top: 40px;
+	position: relative;
+}
+
+.top-posts-header-page2 a, .latest-posts-header a{
+	color: #87a6bc;
+}
+
+.top-posts-header-page2 a:hover, .latest-posts-header a:hover{
+	color: #78c8e6;
+}
+
+.tag-button{
+	background: transparent;
+	border-color: #c8d7e1;
+	border-style: solid;
+	border-width: 1px 1px 2px;
+	color: #2e4453;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: top;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	padding: 8px 12px;
+	margin: auto 12px 12px auto;
+	-webkit-border-radius: 5;
+	-moz-border-radius: 5;
+	border-radius: 5px;
+	float: left;
+}
+
+.tag-button a, .tag-button a:hover{
+	color: #2e4453;
+}
+
+.tag-button:hover {
+	background: #fff;
+	border-color: #a8bece;
+}
+
+.tag-button:active {
+	border-color: #78dcfa;
+	border-width: 2px 1px 1px;
+}
+
+li.featured-tag{
+	font-size: 42px;
+	color: #2D4352;
+}
+
+
+#top-posts article{
+	background: white;
+	position:relative;
+	padding: 0 0px 12px;
+	margin-bottom:6%;
+	margin-right:3%;
+	margin-top: 2%;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.075);
+	width:300px;
+	float: left;
+}
+
+.thumbnail-image {
+	padding-left: 12px;
+}
+
+.post-info {
+	padding: 12px 0 9px;
+	border-bottom: 1px solid #e8f0f5;
+	display: inline-block;
+}
+
+.blog-name, .follow{
+	margin: -2px 0 -4px 1px;
+}
+
+.blog-name {
+	color: #87a6bc;
+	font-size: 14px;
+}
+
+.actions a{
+	margin-right:5px;
+	color: #a7bdcd;
+	font-size: 12px;
+}
+
+a:hover .blog-name, a:hover .follow, a:hover .time, .actions a:hover{
+	color: #78c8e6;
+}
+
+.follow {
+	color: #0087be;
+	font-size: 12px;
+}
+
+.post-info a{
+	color: #2e4453;
+}
+.post-image{
+	width:100%;
+	padding:0;
+	margin: 0 0 5px;
+	height: auto;
+}
+
+h3{
+	font: bold 21px "Merriweather",Georgia, Times, serif;
+	color: #333;
+	margin: 0 12px 0 12px;
+	padding: 8px 0 8px 0;
+}
+
+p {
+	margin: 0 12px 0 12px;
+}
+
+span.read-more{
+	color: #999;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	margin: 0px 0 0 12px;
+}
+
+span.time{
+	color: #a7bdcd;
+	font-size: 12px;
+}
+
+.sub-content{
+	margin: 12px 12px 0px 10px;
+	padding: 4px 0 0 0;
+	border-top: #c8d7e1 solid 1px;
+}
+
+.actions{
+	float:right;
+	color: #a7bdcd;
+	font-size: 12px;
+}
+
+.sub-content-icons {
+	padding-right: 2px;
+	margin-top:5px;
+}
+
+
+@media screen and (max-width: 768px) {
+	body {
+		margin: 30px;
+	}
+
+	#search-bar input{
+		width: 350px;
+	}
+}
