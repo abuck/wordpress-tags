@@ -6,9 +6,9 @@
 
 
 #search-bar input {
-	background: url(images/search.jpg) no-repeat scroll 15px 15px;
-	background-position: 1%;
-	padding-left: 30px;
+	background: url(images/search.jpg) no-repeat scroll;
+	background-position: 2%;
+	padding-left: 38px;
 	background-color: #fff;
 	width: 650px;
   height: 45px;
@@ -17,7 +17,6 @@
 	margin-top:5%;
 	font-size: 14px;
 }
-
 
 #search-bar input:focus {
 	outline: none;
@@ -32,11 +31,11 @@
 }
 
 #trending-tags ul li.trending-tags-header, #top-posts ul li.top-posts-header,
-#tagged-in ul li.tagged-in-header, #top-posts ul li.top-posts-header-page2{
+#tagged-in ul li.tagged-in-header, #trending-tags ul li.related-tags-header{
 	padding: 2px 10px 2px 0px;
 }
 
-#trending-tags ul li.trending-tags-header::after {
+#trending-tags ul li.trending-tags-header::after, #trending-tags ul li.related-tags-header::after {
 	border-top: 1px #c8d7e1 solid;
 	content:'';
 	display:;
@@ -56,21 +55,6 @@
 	left:100%;
 }
 
-#top-posts ul li.top-posts-header-page2::after{
-	border-top: 1px #c8d7e1 solid;
-	content:'';
-	display:;
-	position:absolute;
-	top:9px;
-	width: 530px;
-	left:100%;
-}
-
-.latest-posts-header {
-	border-bottom: 6px solid #0086BD;
-	margin-right: 16px;
-}
-
 
 #tagged-in ul li.tagged-in-header::after {
 	border-top: 1px #c8d7e1 solid;
@@ -83,7 +67,7 @@
 }
 
 
-.trending-tags-header, .top-posts-header, .tagged-in-header, .top-posts-header-page2, .latest-posts-header{
+.trending-tags-header,  .tagged-in-header {
 	color: #87a6bc;
 	background: none;
 	font-size: 10px;
@@ -94,12 +78,50 @@
 	position: relative;
 }
 
-.top-posts-header-page2 a, .latest-posts-header a{
+.top-posts-header {
+	margin-top: 30px;
 	color: #87a6bc;
+	background: none;
+	font-size: 10px;
+	display: inline-block;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.related-tags-header {
+	margin-top: 20px;
+	color: #87a6bc;
+	background: none;
+	font-size: 10px;
+	display: inline-block;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.top-posts-header-page2, .latest-posts-header{
+	display: inline-block;
+	margin: 10px 20px  24px 20px;
+  padding: 0;
+	overflow: hidden;
+  position: relative;
+}
+
+#top-posts ul{
+	width: 650px;
+	background-color: #f3f6f8;
+	height: 45px;
+	margin-top: 30px;
+	border-bottom: 2px solid #87a6bc;
+}
+
+.top-posts-header-page2 a, .latest-posts-header a{
+	color: #0087be;
 }
 
 .top-posts-header-page2 a:hover, .latest-posts-header a:hover{
-	color: #78c8e6;
+	color: #00aadc;
 }
 
 .tag-button{
@@ -146,10 +168,10 @@ li.featured-tag{
 #top-posts article{
 	background: white;
 	position:relative;
-	padding: 0 0px 12px;
-	margin-bottom:6%;
+	padding: 0 0px 10px;
+	margin-top: 10px;
+	margin-bottom:3%;
 	margin-right:3%;
-	margin-top: 2%;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.075);
 	width:300px;
 	float: left;
@@ -241,13 +263,34 @@ span.time{
 	margin-top:5px;
 }
 
+.action-icon-text{
+	vertical-align: 2px;
+}
 
 @media screen and (max-width: 768px) {
 	body {
 		margin: 30px;
 	}
 
-	#search-bar input{
-		width: 350px;
+	#search-bar input {
+		background: url(images/search.jpg) no-repeat scroll;
+		background-position: 3%;
+		padding-left: 35px;
+		background-color: #fff;
+		width: 300px;
+	  height: 40px;
+	  border: 1px solid #c7d6e0;
+		cursor: pointer;
 	}
+
+
+	#trending-tags ul li.trending-tags-header::after, 	#trending-tags ul li.related-tags-header::after {
+		width: 215px;
+	}
+
+	#top-posts ul li.top-posts-header::after, #tagged-in ul li.tagged-in-header::after
+	{
+		width: 238px;
+	}
+
 }
